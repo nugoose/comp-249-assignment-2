@@ -9,6 +9,7 @@ package comp249assignment2;
  *
  * @author louis
  */
+ 
 public class Book {
     private int issueYear;
     private int numberOfPages;
@@ -17,6 +18,7 @@ public class Book {
     private String title;
     private String authorName;
     
+    // constructors
     public Book() {
         this.issueYear = 0;
         this.numberOfPages = 0;
@@ -33,6 +35,8 @@ public class Book {
         this.title = title;
         this.authorName = authorName;
     }
+    
+    // accessors and mutators
     public void setIssueYear(int issueYear) {
         this.issueYear = issueYear;
     }
@@ -69,6 +73,8 @@ public class Book {
     public String getAuthorName() {
         return this.authorName;
     }
+    
+    // methods
     @Override public String toString() {
         return (this.isbn + " " + this.title + " " + this.issueYear + " " + this.authorName + " " + this.price + " " + this.numberOfPages);
     }
